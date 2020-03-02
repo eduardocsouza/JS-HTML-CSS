@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+        </style>
+    <title>DETRAN</title>
+    <style>
+        body{
+            font-family: 'Roboto';
+            font:20pt;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro<input type="number" name="txtvel" id="txtvel"/> Km/h
+    <button onclick="testVel()">Verificar</button>      
+</body>
+<script>
+    function testVel(){        
+        var txt = window.document.getElementById('txtvel')
+        var txtn = Number(txt.value)
+        if(txtn > 60){
+            alert('Você ultrapassou a velocidade!! MULTADO!!!')            
+        }else{
+            alert("Muito bem! passou menos que 60Km/h, SIGA NA PAZ!!")            
+        }
+        txt.value = ""
+    }
+</script>
+</html>

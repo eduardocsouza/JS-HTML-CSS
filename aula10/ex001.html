@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area{
+            background-color: rgb(42, 139, 42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <!--Nessa linha de baixo nos estamos criando 3 eventos que está sendo executado com o js. 
+        O evento se trata de click do mouse, retirar o mouse de cima do objeto e passar o mouse em cima do o bjeto 
+
+
+    <div id="area" onclick="clicar()" onmouseout="saiu()" onmousemove="move()">
+        interaja..
+    </div>
+    -->
+
+    <!--Nesse exemplo abaixo estamos realizando a mesma operação do comando acima. A diferença é que o evento está sendo monitorado 
+    dentro do script js.-->
+    <div id="area">
+        Interaja..
+    </div>
+</body>
+<script> 
+    var a = window.document.getElementById('area')
+    a.addEventListener('click', clicar);
+    a.addEventListener('mouseout', saiu);
+    a.addEventListener('mouseenter', move);
+
+    function clicar(){
+        var a = window.document.getElementById('area')
+        a.innerText='Clicou!'
+    }
+
+    function saiu(){
+        var a = window.document.getElementById('area')
+        a.style.backgroundColor = 'green'
+        a.innerText='Interaja..'
+    }
+
+    function move(){
+        var a = window.document.getElementById('area')
+        a.style.background = 'red'
+    }
+
+</script>
+</html>

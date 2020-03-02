@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+        </style>
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            background-color: tomato;
+            font-family: 'Roboto';
+            font-weight: bold;
+            font-size: 20pt;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <input type="text" name="nome" id="nomeN"/>
+    <button onclick="verificar()">Verificar</button>
+    <div id="res"></div>    
+</body>
+<script>
+    function verificar(){
+        var pais = window.document.getElementById('nomeN').value
+        pais = pais.toUpperCase()
+        var res = window.document.querySelector('div#res')
+        res.innerHTML = `<p>Vivendo em ${pais}</p>` 
+        if(pais != 'BRASIL'){
+            res.innerHTML += `<p>Você é Estrangeiro!</p>`
+        }else{
+            res.innerHTML += `<p>Você é Brasileiro!</p>`
+        } 
+    }
+</script>
+</html>
