@@ -1,0 +1,32 @@
+body{
+    background-color: aqua;
+    font: normal 15pt arial;
+}
+
+header{
+    color: azure;
+    text-align: center;
+}
+
+section{
+    background-color: azure;
+    border-radius: 6px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+}
+
+div#img{
+    text-align: center;    
+}
+
+div#msg{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    color: azure;
+    font-style: italic;
+}

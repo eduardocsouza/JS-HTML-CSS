@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exe001.css"/>
+    <title>Verificador</title>
+</head>
+<body>
+
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>    
+    <section>
+        <div>
+            <p>Ano de nascimento:
+                <input type="number" name="txt" id="txt" placeholder="Digite o ano que nasceu" />
+            </p>
+            
+            <p>
+                Sexo:
+                <input type="radio" name="radiosex" id="masc" checked />
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radiosex" id="femi" />
+                <label for="femi">Feminino</label>
+            </p>
+            <button onclick="verificar()">Verificar</button>
+        </div>
+        <div id="res">
+            Prencha os campos a cima.
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Eduardo Souza</p>
+    </footer>
+    <script src="exe001.js"></script>
+</body>
+
+</html>
